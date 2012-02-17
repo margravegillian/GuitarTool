@@ -4,16 +4,6 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
-   
-
-    <Button
-        android:id="@+id/bEye"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/imageView1"
-        android:layout_below="@+id/imageView1"
-        android:text="Eye" />
-
     <Button
         android:id="@+id/bMilk"
         android:layout_width="wrap_content"
@@ -27,9 +17,16 @@
         android:id="@+id/bStop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button1"
-        android:layout_marginTop="212dp"
-        android:layout_toRightOf="@+id/bTest"
+        android:layout_alignRight="@+id/bMilk"
+        android:layout_centerVertical="true"
         android:text="stop" />
+
+    <Button
+        android:id="@+id/bEye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bStop"
+        android:layout_alignParentTop="true"
+        android:text="Eye" />
 
 </RelativeLayout>
