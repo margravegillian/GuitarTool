@@ -16,7 +16,7 @@ import android.widget.ImageButton;
 public class MainMenu extends Activity implements OnClickListener {
 	/** Called when the activity is first created. */
 
-	Button milkb, eyeb;
+	Button milkb, eyeb, stopb;
 
 	MediaPlayer pmilk, peye;
 
@@ -45,7 +45,8 @@ public class MainMenu extends Activity implements OnClickListener {
 
 		eyeb = (Button) findViewById(R.id.bEye);
 		eyeb.setOnClickListener(this);
-
+		stopb = (Button) findViewById(R.id.bStop);
+		stopb.setOnClickListener(this);
 		milkb.setOnClickListener(this);
 
 	}
@@ -126,15 +127,8 @@ public class MainMenu extends Activity implements OnClickListener {
 		// TODO Auto-generated method stub
 		super.onPause();
 		peye.release();
-		pluke.release();
-		pram.release();
-		pluke.release();
-		pinternet.release();
-		pinfected.release();
-		reboottech.release();
-		pcompute.release();
+
 		pmilk.release();
-		datahook.release();
 
 	}
 
